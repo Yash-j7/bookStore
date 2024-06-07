@@ -1,0 +1,22 @@
+[
+    {"id": 1, "title": "The Great Explorer", "price": "free", "description": "A thrilling adventure across uncharted territories and mysterious lands."},
+    {"id": 2, "title": "Secrets of the Ocean", "price": 526, "description": "Dive deep into the hidden wonders beneath the sea through vivid narrations."},
+    {"id": 3, "title": "Mysteries Unfolded", "price": 1173, "description": "Exploring the enigmatic puzzles that have baffled historians for centuries."},
+    {"id": 4, "title": "Journey Through Time", "price": "free", "description": "A historical saga that transports readers across different eras of human civilization."},
+    {"id": 5, "title": "The Lost Kingdom", "price": 1895, "description": "Discover the secrets and tales of a forgotten medieval kingdom."},
+    {"id": 6, "title": "Path to Enlightenment", "price": 467, "description": "Spiritual teachings and philosophical insights to guide your life's journey."},
+    {"id": 7, "title": "Science and Fiction", "price": 1279, "description": "Blurring the lines between scientific facts and creative fiction."},
+    {"id": 8, "title": "Modern Architecture", "price": 951, "description": "A visual and textual exploration of contemporary architectural marvels."},
+    {"id": 9, "title": "Echoes of the Past", "price": "free", "description": "A deep dive into the historical events that shape our present."},
+    {"id": 10, "title": "World of Tomorrow", "price": 1200, "description": "Speculations and predictions about the future of humanity and technology."},
+    {"id": 11, "title": "Celestial Bodies", "price": 764, "description": "An astronomical guide to the stars, planets, and galaxies."},
+    {"id": 12, "title": "Beyond the Horizon", "price": "free", "description": "Exploring the physical and metaphysical boundaries of human reach."},
+    {"id": 13, "title": "Innovators and Inventions", "price": 490, "description": "Stories of great minds and their contributions to modern society."},
+    {"id": 14, "title": "Futuristic Visions", "price": "free", "description": "A speculative look at the potential technological advances of the future."},
+    {"id": 15, "title": "History's Mysteries", "price": 999, "description": "Unraveling the unanswered questions and hidden tales from the past."},
+    {"id": 16, "title": "Culinary Adventures", "price": 688, "description": "A journey through exotic cuisines and the art of cooking."},
+    {"id": 17, "title": "Artistic Expressions", "price": 2040, "description": "Exploring the impact of different art forms on society and culture."},
+    {"id": 18, "title": "Digital Age Dynamics", "price": 882, "description": "An analysis of how digital technology is reshaping our personal and professional lives."},
+    {"id": 19, "title": "Human Mind & Behavior", "price": 345, "description": "Psychological insights into the complexities of human behavior and mental processes."},
+    {"id": 20, "title": "Global Economic Trends", "price": "free", "description": "Understanding the forces that drive economies around the world."}
+]
