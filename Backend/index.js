@@ -1,0 +1,31 @@
+import express from 'express'
+import dotenv from 'dotenv'
+import mongoose from 'mongoose'
+import bookRoute from './route/book.route.js'
+import cors from 'cors'
+import userRoute from './route/user.route.js'
+
+
+const app = express()
+app.use(cors())
+app.use(express.json())
+dotenv.config()
+const PORT = process.env.PORT
+
+//MONGO CONNECT
+const URI = process.env.MONGODBURI
+try {
+    mongoose.connect(URI)
+} catch (error) {
+    
+}
+
+//defing routes
+
+app.use("/book",bookRoute)
+app.use("/user",userRoute)
+
+https://runkit.com/
+app.listen(PORT, () => {
+  console.log(`Example app listening on PORT ${PORT}`)
+})
