@@ -40,14 +40,14 @@ function Signup() {
                                 Name:
                                 <input
                                     {...register("name", { required: true })}
-                                    className='ml-3 outline-none border' type="name" placeholder='Enter your name' />
+                                    className='w-80 ml-2 px-3 py-1 border rounded-md outline-none' type="name" placeholder='Enter your name' />
                                 {errors.name && <span className='text-red-500'>This field is required</span>}
                             </div>
                             <div>
                                 Email:
                                 <input
                                     {...register("email", { required: true })}
-                                    className='ml-3 outline-none border' type="email" placeholder='Enter your email' />
+                                    className='w-80 ml-2 px-3 py-1 border rounded-md outline-none' type="email" placeholder='Enter your email' />
                                 {errors.email && <span className='text-red-500'>This field is required</span>}
                             </div>
 
@@ -55,7 +55,7 @@ function Signup() {
                                 <span>Password:</span>
                                 <input
                                     {...register("password", { required: true })}
-                                    type="password" className='ml-3 outline-none border' name="password" id="password" placeholder='Enter password' />
+                                    type="password" className='w-80 px-3 ml-2 py-1 border rounded-md outline-none' name="password" id="password" placeholder='Enter password' />
                                 {errors.password && <span className='text-red-500'>This field is required</span>}
                             </div>
                         </div>
@@ -66,7 +66,7 @@ function Signup() {
                     </form>
                     <div className='flex justify-end mt-5'>
                         <span className='pt-2 mr-2'>Already Registered?</span>
-                        <a className="rounded-2xl duration-300 bg-black text-white px-4 py-2" onClick={() => document.getElementById("my_modal_3").showModal()}>Login</a>
+                        <a className=" cursor-pointer rounded-2xl duration-300 bg-black text-white px-4 py-2" onClick={() => document.getElementById("my_modal_3").showModal()}>Login</a>
                         <Login />
                     </div>
                 </div>

@@ -64,7 +64,7 @@ function Books() {
     };
     return (
         
-        <div className="max-w-screen-2xl container mx-auto md:px-10 px-10">
+        <div className="max-w-screen-2xl container mx-auto">
 
             <Slider {...settings}>
 
