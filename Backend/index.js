@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 import bookRoute from './route/book.route.js'
 import cors from 'cors'
 import userRoute from './route/user.route.js'
-
+import path from 'path'
 
 const app = express()
 app.use(cors())
@@ -24,6 +24,18 @@ try {
 
 app.use("/book",bookRoute)
 app.use("/user",userRoute)
+
+
+//deploying
+
+if(process.env.NODE.ENV === "production")
+  {
+      const dirPath = path.resolve()
+      app.use(express.static(Frontend/dist))
+      app.get("*",(req,res) => {
+        res.sendFile(path.resolve(dirPath,"Frontend","dist","index.html"))
+      })
+  }
 
 https://runkit.com/
 app.listen(PORT, () => {

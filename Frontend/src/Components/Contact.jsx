@@ -30,7 +30,7 @@ export default function Contact() {
 
   return (
     <div className=" p-10 mt-5">
-      <h1 className="text-4xl flex justify-center font-serif font-semibold text-blue-400">
+      <h1 className="text-4xl flex justify-center font-serif font-semibold text-gray-950 dark:text-white">
         Share your Views
       </h1>
       <br />

@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../public/banner.jpg";
+import banner from "../assets/banner.jpg";
 import { animateScroll } from "react-scroll";
 
 function Banner() {
@@ -49,7 +49,7 @@ function Banner() {
             onClick={handleClick}
             className="btn btn-active rounded-xl hover:text-black  bg-fuchsia-700 text-white mt-5"
           >
-            Secondary
+            Get in Touch
           </button>
         </div>
       </div>

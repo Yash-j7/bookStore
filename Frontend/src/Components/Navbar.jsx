@@ -63,7 +63,7 @@ function Navbar() {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <a href="/course">Explore</a>
       </li>
       <li>
         <button onClick={handleScrollAbout}>About</button>
@@ -114,6 +114,11 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
+            <img
+              src="https://img.icons8.com/?size=100&id=104339&format=png&color=000000"
+              alt="Logo"
+              className="w-10 h-10 mr-2 max-sm:hidden"
+            />
             <a className=" text-2xl font-bold cursor-pointer" href="/">
               bookStore
             </a>
