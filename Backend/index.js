@@ -26,12 +26,12 @@ app.use("/book",bookRoute)
 app.use("/user",userRoute)
 
 
-//deploying
+//deploying heroku
 
 if(process.env.NODE.ENV === "production")
   {
       const dirPath = path.resolve()
-      app.use(express.static(Frontend/dist))
+      app.use(express.static("Frontend/dist"))
       app.get("*",(req,res) => {
         res.sendFile(path.resolve(dirPath,"Frontend","dist","index.html"))
       })

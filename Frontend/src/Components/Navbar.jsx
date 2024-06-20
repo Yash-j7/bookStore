@@ -120,7 +120,7 @@ function Navbar() {
               className="w-10 h-10 mr-2 max-sm:hidden"
             />
             <a className=" text-2xl font-bold cursor-pointer" href="/">
-              bookStore
+              bookStream
             </a>
           </div>
           <div className="navbar-end space-x-3">

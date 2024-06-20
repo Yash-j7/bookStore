@@ -25,7 +25,7 @@ function Login() {
           setTimeout(() => {
             window.location.reload();
             localStorage.setItem("Users", JSON.stringify(res.data.user));
-          }, 1000);
+          }, 500);
         }
       })
       .catch((err) => {
@@ -38,7 +38,7 @@ function Login() {
   };
   return (
     <div>
-      <dialog id="my_modal_3" className="modal">
+      <dialog id="my_modal_3" className="modal dark:text-black">
         <div className="modal-box  bg-white">
           <form onSubmit={handleSubmit(onSubmit)} method="dialog">
             {/* if there is a button in form, it will close the modal */}
@@ -88,7 +88,7 @@ function Login() {
 
             {/* Button */}
             <div className="flex justify-around mt-6">
-              <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
+              <button className="bg-pink-500 text-white mr-44 rounded-md px-3 py-1  hover:bg-pink-700 duration-200">
                 Login
               </button>
               <p>
