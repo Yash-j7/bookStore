@@ -3,19 +3,19 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import axios from "axios";
 import Card from "./Card";
-import { Link } from "react-router-dom";
 
 function Courses() {
   const [book, setBook] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const getBook = async () => {
       try {
         const res = await axios.get(`${window.location.origin}/book`);
         setBook(res.data);
-        console.log(res.data);
       } catch (error) {
-        console.log(error);
+        console.log("Error fetching books:", error);
+        setError("Unable to fetch books. Please try again later.");
       }
     };
     getBook();
@@ -48,9 +48,11 @@ function Courses() {
                     </Link> */}
         </div>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 md:mr-10">
-          {book.map((item) => (
-            <Card item={item} key={item.id} />
-          ))}
+          {error ? (
+            <p className="text-center text-red-500">{error}</p>
+          ) : (
+            book.map((item) => <Card item={item} key={item.id} />)
+          )}
         </div>
       </div>
       <Footer />
