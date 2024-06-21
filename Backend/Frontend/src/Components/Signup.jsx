@@ -19,7 +19,7 @@ function Signup() {
     };
 
     await axios
-      .post("http://localhost:4000/user/signup", userInfo)
+      .post(`${window.location.origin}/user/signup`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) toast.success("SignUp successfull");

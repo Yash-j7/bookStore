@@ -28,14 +28,21 @@ app.use("/user",userRoute)
 
 //deploying heroku
 
-if(process.env.NODE.ENV === "production")
-  {
-      const dirPath = path.resolve()
-      app.use(express.static("Frontend/dist"))
-      app.get("*",(req,res) => {
-        res.sendFile(path.resolve(dirPath,"Frontend","dist","index.html"))
-      })
-  }
+// if(process.env.NODE.ENV === "production")
+//   {
+//       const dirPath = path.resolve()
+//       app.use(express.static("Frontend/dist"))
+//       app.get("*",(req,res) => {
+//         res.sendFile(path.resolve(dirPath,"Frontend","dist","index.html"))
+//       })
+//   }
+
+//Versel
+
+app.get('/', (req, res) => {
+  app.use(express.static(path.resolve(__dirname, 'Frontend', 'build')));
+  res.sendFile(path.resolve(__dirname, 'Frontend', 'build', 'index.html'));
+});
 
 https://runkit.com/
 app.listen(PORT, () => {
