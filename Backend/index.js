@@ -4,7 +4,6 @@ import mongoose from 'mongoose'
 import bookRoute from './route/book.route.js'
 import cors from 'cors'
 import userRoute from './route/user.route.js'
-import path from 'path'
 
 const app = express()
 app.use(cors())
@@ -39,12 +38,12 @@ app.use("/user",userRoute)
 
 //Versel
 
-app.get('/', (req, res) => {
-  app.use(express.static(path.resolve(__dirname, 'Frontend', 'build')));
-  res.sendFile(path.resolve(__dirname, 'Frontend', 'build', 'index.html'));
-});
+// app.get('/', (req, res) => {
+//   app.use(express.static(path.resolve(__dirname, 'Frontend', 'build')));
+//   res.sendFile(path.resolve(__dirname, 'Frontend', 'build', 'index.html'));
+// });
 
-https://runkit.com/
+// https://runkit.com/
 app.listen(PORT, () => {
   console.log(`Example app listening on PORT ${PORT}`)
 })
